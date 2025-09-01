@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voces Creativas 🎨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Voces Creativas 🎨</h1>
+        <p>Deja tu mensaje y forma parte de nuestro muro interactivo</p>
+    </header>
+
+    <section class="form-section">
+        <form id="messageForm">
+            <input type="text" id="name" placeholder="Tu nombre o nickname" required>
+            <textarea id="message" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar 📝</button>
+        </form>
+    </section>
+
+    <section class="messages-section">
+        <h2>Muro de mensajes</h2>
+        <ul id="messages"></ul>
+    </section>
+
+    <footer>
+        © Wendoly 2025
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

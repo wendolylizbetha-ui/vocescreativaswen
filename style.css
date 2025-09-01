@@ -1,0 +1,141 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body y fondo */
+body {
+    background: linear-gradient(160deg, #f093fb, #f5576c);
+    min-height: 100vh;
+    color: #333;
+    padding-bottom: 60px; /* espacio para el footer */
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    color: #fff;
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Formulario */
+.form-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 320px;
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    resize: none;
+}
+
+textarea {
+    height: 80px;
+}
+
+button {
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background-color: #f5576c;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #f093fb;
+}
+
+/* Muro de mensajes */
+.messages-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.messages-section h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+#messages {
+    list-style: none;
+    width: 90%;
+    max-width: 600px;
+}
+
+.message-card {
+    background: rgba(255,255,255,0.85);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+.message-name {
+    font-weight: bold;
+    color: #f5576c;
+    margin-bottom: 5px;
+}
+
+.message-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: rgba(0,0,0,0.2);
+    color: #fff;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+}
